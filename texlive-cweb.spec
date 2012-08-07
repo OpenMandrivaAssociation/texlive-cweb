@@ -1,12 +1,12 @@
-# revision 23089
+# revision 26689
 # category Package
 # catalog-ctan /web/c_cpp/cweb
-# catalog-date 2011-04-17 17:29:20 +0200
+# catalog-date 2012-04-30 16:43:33 +0200
 # catalog-license knuth
 # catalog-version 3.64ad
 Name:		texlive-cweb
 Version:	3.64ad
-Release:	2
+Release:	3
 Summary:	A Web system in C
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/web/c_cpp/cweb
