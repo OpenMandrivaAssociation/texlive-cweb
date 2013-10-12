@@ -1,4 +1,4 @@
-# revision 26689
+# revision 29764
 # category Package
 # catalog-ctan /web/c_cpp/cweb
 # catalog-date 2012-04-30 16:43:33 +0200
@@ -6,7 +6,7 @@
 # catalog-version 3.64ad
 Name:		texlive-cweb
 Version:	3.64ad
-Release:	3
+Release:	4
 Summary:	A Web system in C
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/web/c_cpp/cweb
@@ -41,13 +41,13 @@ programming language C.
 %{_texmfdistdir}/tex/plain/cweb/pdffcwebmac.tex
 %{_texmfdistdir}/tex/plain/cweb/pdficwebmac.tex
 %{_texmfdistdir}/tex/plain/cweb/pdfwebmac.tex
-%doc %{_texmfdistdir}/doc/plain/cweb/cwebman.dvi
 %doc %{_mandir}/man1/ctangle.1*
-%doc %{_texmfdir}/doc/man/man1/ctangle.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/ctangle.man1.pdf
 %doc %{_mandir}/man1/cweave.1*
-%doc %{_texmfdir}/doc/man/man1/cweave.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/cweave.man1.pdf
 %doc %{_mandir}/man1/cweb.1*
-%doc %{_texmfdir}/doc/man/man1/cweb.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/cweb.man1.pdf
+%doc %{_texmfdistdir}/doc/plain/cweb/cwebman.dvi
 
 #-----------------------------------------------------------------------
 %prep
@@ -57,24 +57,6 @@ programming language C.
 
 %install
 mkdir -p %{buildroot}%{_datadir}
-cp -fpar texmf texmf-dist %{buildroot}%{_datadir}
+cp -fpar texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
-mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
-
-
-%changelog
-* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.64ad-3
-+ Revision: 812210
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.64ad-2
-+ Revision: 750757
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 3.64ad-1
-+ Revision: 718194
-- texlive-cweb
-- texlive-cweb
-- texlive-cweb
-- texlive-cweb
-
+mv %{buildroot}%{_texmfdistdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
