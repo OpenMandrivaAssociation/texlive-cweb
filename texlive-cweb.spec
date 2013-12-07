@@ -6,7 +6,7 @@
 # catalog-version 3.64ad
 Name:		texlive-cweb
 Version:	3.64ad
-Release:	7
+Release:	8
 Summary:	A Web system in C
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/web/c_cpp/cweb
