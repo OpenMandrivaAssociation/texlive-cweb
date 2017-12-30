@@ -1,12 +1,6 @@
-# revision 33736
-# category Package
-# catalog-ctan /web/c_cpp/cweb
-# catalog-date 2012-04-30 16:43:33 +0200
-# catalog-license knuth
-# catalog-version 3.64ad
 Name:		texlive-cweb
-Version:	3.64ad
-Release:	13
+Version:	3.64b
+Release:	1
 Summary:	A Web system in C
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/web/c_cpp/cweb
@@ -34,20 +28,14 @@ programming language C.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/plain/cweb/cwebmac.tex
-%{_texmfdistdir}/tex/plain/cweb/pdfXcwebmac.tex
-%{_texmfdistdir}/tex/plain/cweb/pdfcwebmac.tex
-%{_texmfdistdir}/tex/plain/cweb/pdfdcwebmac.tex
-%{_texmfdistdir}/tex/plain/cweb/pdffcwebmac.tex
-%{_texmfdistdir}/tex/plain/cweb/pdficwebmac.tex
-%{_texmfdistdir}/tex/plain/cweb/pdfwebmac.tex
+%{_texmfdistdir}/tex/plain/cweb
 %doc %{_mandir}/man1/ctangle.1*
 %doc %{_texmfdistdir}/doc/man/man1/ctangle.man1.pdf
 %doc %{_mandir}/man1/cweave.1*
 %doc %{_texmfdistdir}/doc/man/man1/cweave.man1.pdf
 %doc %{_mandir}/man1/cweb.1*
 %doc %{_texmfdistdir}/doc/man/man1/cweb.man1.pdf
-%doc %{_texmfdistdir}/doc/plain/cweb/cwebman.dvi
+%doc %{_texmfdistdir}/doc/plain/cweb
 
 #-----------------------------------------------------------------------
 %prep
