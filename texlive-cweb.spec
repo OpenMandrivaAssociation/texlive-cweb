@@ -1,12 +1,12 @@
 Name:		texlive-cweb
-Version:	3.64b
-Release:	2
+Version:	63787
+Release:	1
 Summary:	A Web system in C
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/web/c_cpp/cweb
 License:	KNUTH
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cweb.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cweb.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cweb.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cweb.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -19,27 +19,22 @@ Documentation (also known as Literate Programming) in the
 programming language C.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/tex/plain/cweb
-%doc %{_mandir}/man1/ctangle.1*
-%doc %{_texmfdistdir}/doc/man/man1/ctangle.man1.pdf
-%doc %{_mandir}/man1/cweave.1*
-%doc %{_texmfdistdir}/doc/man/man1/cweave.man1.pdf
-%doc %{_mandir}/man1/cweb.1*
-%doc %{_texmfdistdir}/doc/man/man1/cweb.man1.pdf
-%doc %{_texmfdistdir}/doc/plain/cweb
+%doc %{_mandir}/man1/*.1*
+%doc %{_texmfdistdir}/doc/man/man1/*.man1.pdf
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
