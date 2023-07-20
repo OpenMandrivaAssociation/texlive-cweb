@@ -1,6 +1,6 @@
 Name:		texlive-cweb
-Version:	65081
-Release:	2
+Version:	67664
+Release:	1
 Summary:	A Web system in C
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/web/c_cpp/cweb
