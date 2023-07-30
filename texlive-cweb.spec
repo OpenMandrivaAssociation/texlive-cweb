@@ -1,5 +1,5 @@
 Name:		texlive-cweb
-Version:	67664
+Version:	67693
 Release:	1
 Summary:	A Web system in C
 Group:		Publishing
