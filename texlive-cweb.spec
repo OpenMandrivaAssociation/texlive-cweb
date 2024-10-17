@@ -3,7 +3,7 @@ Version:	72013
 Release:	1
 Summary:	A Web system in C
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/web/c_cpp/cweb
+URL:		https://www.ctan.org/tex-archive/web/c_cpp/cweb
 License:	KNUTH
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cweb.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cweb.doc.r%{version}.tar.xz
