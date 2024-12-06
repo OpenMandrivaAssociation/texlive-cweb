@@ -1,5 +1,5 @@
 Name:		texlive-cweb
-Version:	72279
+Version:	72731
 Release:	1
 Summary:	A Web system in C
 Group:		Publishing
