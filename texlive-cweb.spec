@@ -12,8 +12,6 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/cweb.r%{tl_revis
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/cweb.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-BuildRequires:	texlive-tlpkg
-%texlive_base_requires
 Requires:	texlive(cweb.bin)
 Requires:	texlive(iftex)
 Requires:	texlive(kpathsea)
